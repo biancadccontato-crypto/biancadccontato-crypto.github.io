@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+        <button class="btn-voltar" onclick="window.history.back()">← Voltar</button>
+        <div class="card">
+    <H2>Briefing Identidade Visual</H2>
+    <form>
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="inputNome">Nome da Empresa:</label>
+            <input required name="inputNome" type="text" placeholder="Digite seu nome" />
+            <br>
+            <br>
+            <label for="tel">Telefone / WhatsApp</label>
+            <input type="tel" id="tel" name="tel" placeholder="(54) 99999-0000">
+            <br>
+            <br>
+            <label for="site">Site atual (se houver):</label>
+            <input type="url" id="site" name="site" placeholder="https://www.suaempresa.com.br">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados da Marca</legend>
+            <label for="logo_atual">Logo atual (se houver)</label>
+            <input type="file" id="logo_atual" name="logo_atual" accept=".png,.jpg,.jpeg,.svg,.pdf,.ai">
+            <br><br>
+            <label>Gênero predominante do público:</label><br>
+            <label class="option-item"><input type="radio" name="genero" value="feminino"> Feminino</label>
+            <label class="option-item"><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label class="option-item"><input type="radio" name="genero" value="todos"> Todos</label>
+            <label class="option-item"><input type="radio" name="genero" value="outro"> Não binário / Outro</label>
+            <br><br>
+            <label for="inputColor">Cor principal da marca:</label>
+            <input name="inputEmail" type="color" />
+            <br><br>
+            <label>Escolha os adjetivos que melhor descrevem a marca:</label><br>
+            <label class="option-item"><input type="checkbox" name="personalidade" value="moderno"> Moderna</label>
+            <label class="option-item"><input type="checkbox" name="personalidade" value="classico"> Clássica</label>
+            <label class="option-item"><input type="checkbox" name="personalidade" value="minimalista">
+                Minimalista</label>
+            <label class="option-item"><input type="checkbox" name="personalidade" value="ousado"> Ousada</label>
+            <br><br>
+            <label>Nível de modernidade</label>
+            <input type="range" name="modernidade" min="1" max="10" value="5">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferências</legend>
+            <label for="mes_lancamento">Mês que quer dar início</label>
+            <input type="month" id="mes_lancamento" name="mes_lancamento"><br><br>
+            <label for="semana_reuniao">Semana preferida para 1ª reunião</label>
+            <input type="week" id="semana_reuniao" name="semana_reuniao"><br><br>
+            <label for="reuniao_agendada">Data e hora exata da reunião (se já definida)</label>
+            <input type="datetime-local" id="reuniao_agendada" name="reuniao_agendada">
+            <br><br>
+
+            <label for="orcamento_exato">Valor dispónivel (opcional)</label>
+            <input type="number" id="orcamento_exato" name="orcamento_exato" min="0" step="50" placeholder="Ex: 2500">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Criar Conta</legend>
+            <label for="inputEmail">E-mail:</label>
+            <input name="inputEmail" type="email" placeholder="Digite seu e-mail" />
+            <br>
+            <br>
+            <label for="inputSenha">Crie uma senha:</label>
+            <input name="inputSenha" type="password" placeholder="Digite sua Senha" />
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Briefing" formaction="../index.html">
+    </form>
+    </form>
+</div>
+</body>
+
+</html>
