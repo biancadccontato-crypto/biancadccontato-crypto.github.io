@@ -15,34 +15,53 @@ body {
     padding-top: 100px; /* Dá espaço para o menu não cobrir o card */
 }
 
-/* 1. Barra de Navegação Elegante */
 .navbar {
-    position: fixed;    
-    top: 0;             
-    left: 0;            
-    width: 100%;        
-    padding: 20px; 
-    z-index: 1000;      
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
-    backdrop-filter: blur(10px); /* Efeito de vidro fosco (estilo Apple) */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Linha divisória bem sutil */
-    margin-bottom: 15px; /* Afasta os botões do texto de baixo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 24px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
-    gap: 35px;          
-    justify-content: center; 
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar a {
-    color: #6040a1; /* Cinza elegante para links inativos */
-    font-size: 15px;
-    font-weight: 500;
-    transition: all 0.3s ease;  
+.nav-home {
+    color: #6040a1;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
-/* Efeito ao passar o mouse no menu */
-.navbar a:hover {
-    color: #5f2c92; /* Roxo/Azul moderno (Indigo) */
-    transform: translateY(-1px); /* Sutil efeito de levantar */
+.nav-home:hover { color: #5f2c92; }
+
+.nav-actions { display: flex; gap: 8px; }
+
+.nav-btn {
+    background: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:hover {
+    background: #f3eeff;
+    color: #6040a1;
+}
 }
 
 .cards-grid {

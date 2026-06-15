@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
 
 <header>
     <nav class="navbar">
-        <a href="./pages/about.html">Sobre Mim</a>
-        <a href="./pages/atividades.html">Atividades</a>
+        <a href="./index.html" class="nav-home" aria-label="Início">
+        <i class="ti ti-home"></i>
+        </a>
+        <div class="nav-actions">
+        <button class="nav-btn" id="darkBtn" aria-label="Alternar modo noturno" title="Modo noturno">
+        <i class="ti ti-moon"></i>
+        </button>
+        <button class="nav-btn" id="a11yBtn" aria-label="Acessibilidade" title="Acessibilidade">
+        <i class="ti ti-accessible"></i>
+        </button>
+        </div>
     </nav>
 </header>
 
@@ -51,5 +61,6 @@
 </main>
 
 <footer></footer>
+<script src="js/script.js"></script>
 </body>
 </html>
