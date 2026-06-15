@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Configurações Globais (Reset básico) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Um fundo cinza bem claro e sofisticado em vez do roxo saturado */
+    background-color: #e5d7f4; 
+    font-family: 'Inter', sans-serif;
+    color: #1e293b; /* Cor do texto quase preta (estilo Notion) */
+    padding-top: 100px; /* Dá espaço para o menu não cobrir o card */
+}
+
+/* 1. Barra de Navegação Elegante */
+.navbar {
+    position: fixed;    
+    top: 0;             
+    left: 0;            
+    width: 100%;        
+    padding: 20px; 
+    z-index: 1000;      
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco (estilo Apple) */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Linha divisória bem sutil */
+    margin-bottom: 15px; /* Afasta os botões do texto de baixo */
+    display: flex;
+    gap: 35px;          
+    justify-content: center; 
+}
+
+.navbar a {
+    color: #6040a1; /* Cinza elegante para links inativos */
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;  
+}
+
+/* Efeito ao passar o mouse no menu */
+.navbar a:hover {
+    color: #5f2c92; /* Roxo/Azul moderno (Indigo) */
+    transform: translateY(-1px); /* Sutil efeito de levantar */
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 2px solid transparent;
+    transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.card:hover {
+    border-color: var(--card-hover-border);
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-emoji { font-size: 1.2rem; }
+
+.card-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 0;
+}
