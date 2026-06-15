@@ -59,6 +59,8 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     border: 2px solid transparent;
     transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
+    background-color: var(--card-bg);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -81,4 +83,18 @@ body {
     line-height: 1.5;
     color: #555;
     margin-bottom: 0;
+}
+:root {
+    --card-bg: #ffffff;
+    --card-hover-border: #b39ddb;
+    --transition: 0.2s ease;
+}
+
+.card h3 a {
+    color: #5f2c92;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    text-decoration: underline;
 }
