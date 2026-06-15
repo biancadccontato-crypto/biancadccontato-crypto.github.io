@@ -9,7 +9,7 @@
 
 body {
     /* Um fundo cinza bem claro e sofisticado em vez do roxo saturado */
-    background-color: #e5d7f4; 
+    background-color: rgba(255, 255, 255, 0.85) ; 
     font-family: 'Inter', sans-serif;
     color: #1e293b; /* Cor do texto quase preta (estilo Notion) */
     padding-top: 100px; /* Dá espaço para o menu não cobrir o card */
@@ -22,7 +22,7 @@ body {
     width: 100%;
     padding: 12px 24px;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #e5d7f4;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
