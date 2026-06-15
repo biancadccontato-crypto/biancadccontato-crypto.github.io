@@ -14,11 +14,17 @@
         <a href="./index.html" class="nav-home" aria-label="Início">
         <i class="ti ti-home"></i>
         </a>
+        <div class="nav-links">
+        <a href="pages/curriculum.html">Currículo</a>
+        <a href="pages/about.html">Sobre Mim</a>
+        <a href="pages/receitas.html">Receitas Favoritas</a>
+        <a href="pages/contato.html">Contato</a>
+        </div>
         <div class="nav-actions">
-        <button class="nav-btn" id="darkBtn" aria-label="Alternar modo noturno" title="Modo noturno">
+        <button class="nav-btn" id="darkBtn" aria-label="Alternar modo noturno">
         <i class="ti ti-moon"></i>
         </button>
-        <button class="nav-btn" id="a11yBtn" aria-label="Acessibilidade" title="Acessibilidade">
+        <button class="nav-btn" id="a11yBtn" aria-label="Acessibilidade">
         <i class="ti ti-accessible"></i>
         </button>
         </div>
@@ -26,38 +32,45 @@
 </header>
 
 <main>
-    <section class="sobre-temas">
-        <div class="container">
-            <div class="section-header">
-                <h2>Bianca de Carvalho</h2>
-                <p>Estudante de Ciência da Computação</p>
-                <br>
-                <p>Conheça meus projetos:</p>
-                <a href="https://linkedin.com/in/..." target="_blank">LinkedIn</a>
-                <a href="https://github.com/..." target="_blank">GitHub</a>
-                <p>Clique em uma das seções para saber mais.</p>
-            </div>
+       <!-- Hero -->
+<section class="hero">
+  <h1>Bianca de Carvalho</h1>
+  <p class="subtitulo">Estudante de Ciência da Computação · UPF</p>
+  <p class="bio">Explorando tecnologia, inovação e curiosidades do dia a dia.</p>
+  <div class="hero-links">
+    <a href="https://linkedin.com/in/..." target="_blank">LinkedIn</a>
+    <a href="https://github.com/..." target="_blank">GitHub</a>
+  </div>
+</section>
 
-            <div class="cards-grid">
-                <div class="card">
-                    <h3><span class="card-emoji">📄</span> <a href="pages/curriculum.html">Currículo</a></h3>
-                    <p class="card-desc">Veja minha trajetória acadêmica e profissional.</p>
-                </div>
-                <div class="card">
-                    <h3><span class="card-emoji">👤</span> <a href="pages/about.html">Sobre Mim</a></h3>
-                    <p class="card-desc">Saiba mais sobre quem sou e meus interesses.</p>
-                </div>
-                <div class="card">
-                    <h3><span class="card-emoji">🍽️</span> <a href="pages/receitas.html">Receitas Favoritas</a></h3>
-                    <p class="card-desc">Uma seleção de receitas que eu amo fazer.</p>
-                </div>
-                <div class="card">
-                    <h3><span class="card-emoji">✉️</span> <a href="pages/contato.html">Contato</a></h3>
-                    <p class="card-desc">Entre em contato comigo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Últimas Postagens -->
+<section class="ultimas-postagens">
+  <h2>Últimas Postagens</h2>
+  <div class="posts-grid">
+
+    <article class="post-card">
+      <span class="post-categoria">Tecnologia</span>
+      <h3><a href="pages/posts/post1.html">O que é Inteligência Artificial?</a></h3>
+      <p class="post-data">10 de junho de 2025</p>
+      <p class="post-trecho">Uma introdução aos conceitos básicos de IA e como ela está presente no nosso cotidiano...</p>
+    </article>
+
+    <article class="post-card">
+      <span class="post-categoria">Receitas</span>
+      <h3><a href="pages/receitas/bolo-cenoura.html">Bolo de cenoura perfeito</a></h3>
+      <p class="post-data">5 de junho de 2025</p>
+      <p class="post-trecho">A receita que nunca falha: fofinho por dentro, com cobertura de chocolate...</p>
+    </article>
+
+    <article class="post-card">
+      <span class="post-categoria">Faculdade</span>
+      <h3><a href="pages/posts/post3.html">Minha experiência no primeiro semestre</a></h3>
+      <p class="post-data">1 de junho de 2025</p>
+      <p class="post-trecho">Como foi começar Ciência da Computação e o que aprendi nas primeiras semanas...</p>
+    </article>
+
+  </div>
+</section>
 </main>
 
 <footer></footer>

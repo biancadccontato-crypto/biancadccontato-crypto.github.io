@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas</title>
+    <title>Receitas Favoritas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
-    <header>Minhas Receitas Favoritas</header>
-    <div>
-        Mousse de Maracujá
+
+<header>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-home" aria-label="Início">
+      <i class="ti ti-home"></i>
+    </a>
+    <div class="nav-links">
+      <a href="curriculum.html">Currículo</a>
+      <a href="about.html">Sobre Mim</a>
+      <a href="receitas.html">Receitas Favoritas</a>
+      <a href="contato.html">Contato</a>
     </div>
+    <div class="nav-actions">
+      <button class="nav-btn" id="darkBtn" aria-label="Modo noturno"><i class="ti ti-moon"></i></button>
+      <button class="nav-btn" id="a11yBtn" aria-label="Acessibilidade"><i class="ti ti-accessible"></i></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Receitas Favoritas</h1>
+    <p class="subtitulo">Uma seleção de receitas que eu amo fazer</p>
+  </section>
+
+  <section class="page-content">
+    <div class="posts-grid">
+
+      <article class="post-card">
+        <span class="post-categoria">Bolos</span>
+        <h3><a href="recipes/bolo-cenoura.html">Bolo de cenoura perfeito</a></h3>
+        <p class="post-data">Tempo: 50 min · Rende: 10 fatias</p>
+        <p class="post-trecho">Fofinho por dentro, com cobertura de chocolate que derrete na boca.</p>
+      </article>
+
+      <article class="post-card">
+        <span class="post-categoria">Massas</span>
+        <h3><a href="recipes/macarrao.html">Macarrão ao molho branco</a></h3>
+        <p class="post-data">Tempo: 30 min · Rende: 4 porções</p>
+        <p class="post-trecho">Cremoso e rápido, perfeito para o dia a dia.</p>
+      </article>
+
+      <article class="post-card">
+        <span class="post-categoria">Lanches</span>
+        <h3><a href="recipes/tapioca.html">Tapioca recheada</a></h3>
+        <p class="post-data">Tempo: 15 min · Rende: 2 porções</p>
+        <p class="post-trecho">Leve e versátil, boa em qualquer hora do dia.</p>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer></footer>
+<script src="../js/script.js"></script>
 </body>
 </html>

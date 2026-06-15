@@ -29,6 +29,22 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #6040a1;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #5f2c92;
+}
 
 .nav-home {
     color: #6040a1;
@@ -116,4 +132,236 @@ body {
 
 .card h3 a:hover {
     text-decoration: underline;
+}
+.hero {
+    text-align: center;
+    padding: 60px 24px 40px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5f2c92;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.bio {
+    font-size: 16px;
+    color: #444;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.hero-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.hero-links a {
+    color: #6040a1;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #b39ddb;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.hero-links a:hover {
+    background: #ede7f6;
+}
+
+.ultimas-postagens {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+}
+
+.ultimas-postagens h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #5f2c92;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e0d7f0;
+    padding-bottom: 8px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #e8e0f0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    border-color: #b39ddb;
+}
+
+.post-categoria {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6040a1;
+    background: #ede7f6;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.post-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 4px;
+}
+
+.post-card h3 a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+.post-card h3 a:hover {
+    color: #5f2c92;
+}
+
+.post-data {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.post-trecho {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+/* Hero das páginas internas */
+.page-hero {
+    text-align: center;
+    padding: 60px 24px 32px;
+}
+
+.page-hero h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5f2c92;
+    margin-bottom: 8px;
+}
+
+/* Conteúdo das páginas */
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+}
+
+.content-block {
+    margin-bottom: 40px;
+}
+
+.content-block h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5f2c92;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0d7f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Timeline (currículo) */
+.timeline-item {
+    border-left: 3px solid #b39ddb;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.timeline-titulo {
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+.timeline-local {
+    color: #666;
+    font-size: 14px;
+}
+
+.timeline-data {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+/* Tags de habilidades */
+.tags-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #ede7f6;
+    color: #5f2c92;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Lista de interesses */
+.interests-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.interests-list li::before {
+    content: "→ ";
+    color: #6040a1;
+}
+
+/* Contato */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #444;
+}
+
+.contact-list a {
+    color: #6040a1;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.contact-list .ti {
+    font-size: 20px;
+    color: #6040a1;
 }
