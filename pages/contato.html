@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
-    <header>
+
+<header>
   <nav class="navbar">
     <a href="../index.html" class="nav-home" aria-label="Início">
       <i class="ti ti-home"></i>
@@ -25,20 +26,48 @@
     </div>
   </nav>
 </header>
-    <main>
-    <h1>Formulário de Contato</h1>
-    <form onsubmit="enviar(); return false;">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" placeholder="Digite seu e-mail"><br><br>
+<main>
+  <section class="page-hero">
+    <h1>Contato</h1>
+    <p class="subtitulo">Vamos conversar!</p>
+  </section>
 
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" rows="5" cols="40"></textarea><br><br>
+  <section class="page-content">
+    <div class="content-block">
+      <h2><i class="ti ti-map-pin"></i> Onde me encontrar</h2>
+      <ul class="contact-list">
+        <li><i class="ti ti-brand-linkedin"></i> <a href="https://www.linkedin.com/in/bianca-de-carvalho-316b87195/" target="_blank">LinkedIn</a></li>
+        <li><i class="ti ti-brand-github"></i> <a href="https://github.com/biancadccontato-crypto" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
 
-        <button onclick="enviar()">Enviar</button>
-    </form>
+    <div class="content-block">
+      <h2><i class="ti ti-mail"></i> Envie uma mensagem</h2>
+      <form class="form-contato" onsubmit="enviarFormulario(event)">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome completo">
+          <span class="form-erro" id="erro-nome">Por favor, informe seu nome.</span>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com">
+          <span class="form-erro" id="erro-email">Por favor, informe um e-mail válido.</span>
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+          <span class="form-erro" id="erro-mensagem">Por favor, escreva uma mensagem.</span>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar mensagem</button>
+        <p id="sucesso-msg" style="display:none; color: #2e7d32; font-size: 14px; margin-top: 8px;">✓ Mensagem enviada com sucesso!</p>
+      </form>
+    </div>
+  </section>
 </main>
+
+<footer></footer>
+<script src="../js/script.js"></script>
 </body>
 </html>
