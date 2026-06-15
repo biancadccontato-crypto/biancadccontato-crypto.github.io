@@ -2,17 +2,32 @@
 <html>
 <head>
     <title>receita</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <body>
-    <button class="btn-voltar" onclick="window.history.back()">← Voltar</button>
-    <div class="card">
+    <header>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-home" aria-label="Início">
+      <i class="ti ti-home"></i>
+    </a>
+    <div class="nav-links">
+      <a href="../curriculum.html">Currículo</a>
+      <a href="../about.html">Sobre Mim</a>
+      <a href="../receitas.html">Receitas Favoritas</a>
+      <a href="../contato.html">Contato</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-btn" id="darkBtn" aria-label="Modo noturno"><i class="ti ti-moon"></i></button>
+      <button class="nav-btn" id="a11yBtn" aria-label="Acessibilidade"><i class="ti ti-accessible"></i></button>
+    </div>
+  </nav>
+</header>
+<main>
     <h1><strong>Musse de Maracujá</strong></h1>
     <i>WebLab - 2025/1</i><br>
     <br>
-    <a href="../img/mousse.jpg">
-    <img src="../img/mousse.jpg" alt="Imagem"
-    width="350px" height="300px"/></a>
+      <img src="../../assets/mousse.jpg" alt="Mousse de Maracujá"
+           style="width: 100%; max-width: 400px; border-radius: 10px; display: block; margin: 0 auto 24px;">
     <br><br>
     Uma sobremesa deliciosa e <mark>fácil</mark> de fazer.<br>
     <h2><strong>Ingredientes</strong></h2>
@@ -33,6 +48,6 @@
 <q>Receita muito boa, eu recomendo.</q><br>
 - Prof. Pablo Leon Rodrigues
 
-    </div>
+</main>
 </body>
 </html>
