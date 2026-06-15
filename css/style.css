@@ -1,20 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-/* Configurações Globais (Reset básico) */
+/* ================================
+   RESET & GLOBAL
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    /* Um fundo cinza bem claro e sofisticado em vez do roxo saturado */
-    background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    color: #1e293b; /* Cor do texto quase preta (estilo Notion) */
-    padding-top: 100px; /* Dá espaço para o menu não cobrir o card */
+:root {
+    --roxo-principal: #5f2c92;
+    --roxo-claro: #6040a1;
+    --roxo-fundo: #ede7f6;
+    --roxo-borda: #b39ddb;
+    --texto-principal: #2d2d2d;
+    --texto-secundario: #666;
+    --texto-muted: #aaa;
+    --fundo-pagina: #e5d7f4;
+    --fundo-card: #ffffff;
+    --borda-card: #e8e0f0;
+    --transition: 0.2s ease;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--fundo-pagina);
+    color: var(--texto-principal);
+    padding-top: 64px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--roxo-claro);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   NAVBAR
+================================ */
 .navbar {
     position: fixed;
     top: 0;
@@ -22,46 +51,51 @@ body {
     width: 100%;
     padding: 12px 24px;
     z-index: 1000;
-    background-color: #f3eeff;;
+    background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.nav-home {
+    color: var(--roxo-principal);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-home:hover {
+    color: var(--roxo-claro);
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
     gap: 32px;
 }
 
 .nav-links a {
-    color: #6040a1;
+    color: var(--roxo-claro);
     font-size: 15px;
     font-weight: 500;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color var(--transition);
 }
 
 .nav-links a:hover {
-    color: #5f2c92;
+    color: var(--roxo-principal);
 }
 
-.nav-home {
-    color: #6040a1;
-    font-size: 22px;
+.nav-actions {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: color 0.2s;
+    gap: 8px;
 }
-
-.nav-home:hover { color: #5f2c92; }
-
-.nav-actions { display: flex; gap: 8px; }
 
 .nav-btn {
     background: none;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 36px;
     height: 36px;
@@ -71,68 +105,17 @@ body {
     cursor: pointer;
     color: #888;
     font-size: 18px;
-    transition: background 0.2s, color 0.2s;
+    transition: background var(--transition), color var(--transition);
 }
 
 .nav-btn:hover {
-    background: #f3eeff;
-    color: #6040a1;
-}
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.25rem;
-    margin-bottom: 2rem;
+    background: var(--roxo-fundo);
+    color: var(--roxo-claro);
 }
 
-.card {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border: 2px solid transparent;
-    transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
-    background-color: var(--card-bg);
-    border: 0.5px solid rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-    border-color: var(--card-hover-border);
-    transform: translateY(-2px);
-}
-
-.card h3 {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.card-emoji { font-size: 1.2rem; }
-
-.card-desc {
-    font-size: 0.88rem;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 0;
-}
-:root {
-    --card-bg: #ffffff;
-    --card-hover-border: #b39ddb;
-    --transition: 0.2s ease;
-}
-
-.card h3 a {
-    color: #5f2c92;
-    text-decoration: none;
-}
-
-.card h3 a:hover {
-    text-decoration: underline;
-}
+/* ================================
+   HOME — HERO
+================================ */
 .hero {
     text-align: center;
     padding: 60px 24px 40px;
@@ -141,21 +124,21 @@ body {
 .hero h1 {
     font-size: 2rem;
     font-weight: 600;
-    color: #5f2c92;
+    color: var(--roxo-principal);
     margin-bottom: 8px;
 }
 
 .subtitulo {
     font-size: 15px;
-    color: #888;
+    color: var(--texto-secundario);
     margin-bottom: 12px;
 }
 
 .bio {
     font-size: 16px;
-    color: #444;
+    color: var(--texto-secundario);
     max-width: 500px;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
 }
 
 .hero-links {
@@ -165,19 +148,23 @@ body {
 }
 
 .hero-links a {
-    color: #6040a1;
+    color: var(--roxo-claro);
     font-weight: 500;
     text-decoration: none;
-    border: 1px solid #b39ddb;
+    border: 1px solid var(--roxo-borda);
     padding: 6px 16px;
     border-radius: 6px;
-    transition: background 0.2s;
+    transition: background var(--transition);
 }
 
 .hero-links a:hover {
-    background: #ede7f6;
+    background: var(--roxo-fundo);
+    text-decoration: none;
 }
 
+/* ================================
+   HOME — ÚLTIMAS POSTAGENS
+================================ */
 .ultimas-postagens {
     max-width: 900px;
     margin: 0 auto;
@@ -185,12 +172,12 @@ body {
 }
 
 .ultimas-postagens h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: #5f2c92;
+    color: var(--roxo-principal);
     margin-bottom: 24px;
-    border-bottom: 1px solid #e0d7f0;
     padding-bottom: 8px;
+    border-bottom: 1px solid var(--borda-card);
 }
 
 .posts-grid {
@@ -200,24 +187,24 @@ body {
 }
 
 .post-card {
-    background: #fff;
-    border: 1px solid #e8e0f0;
+    background: var(--fundo-card);
+    border: 1px solid var(--borda-card);
     border-radius: 10px;
     padding: 20px;
-    transition: transform 0.2s, border-color 0.2s;
+    transition: transform var(--transition), border-color var(--transition);
 }
 
 .post-card:hover {
     transform: translateY(-3px);
-    border-color: #b39ddb;
+    border-color: var(--roxo-borda);
 }
 
 .post-categoria {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #6040a1;
-    background: #ede7f6;
+    color: var(--roxo-claro);
+    background: var(--roxo-fundo);
     padding: 2px 8px;
     border-radius: 4px;
 }
@@ -229,26 +216,29 @@ body {
 }
 
 .post-card h3 a {
-    color: #2d2d2d;
+    color: var(--texto-principal);
     text-decoration: none;
 }
 
 .post-card h3 a:hover {
-    color: #5f2c92;
+    color: var(--roxo-principal);
 }
 
 .post-data {
     font-size: 12px;
-    color: #aaa;
+    color: var(--texto-muted);
     margin-bottom: 8px;
 }
 
 .post-trecho {
     font-size: 13px;
-    color: #666;
+    color: var(--texto-secundario);
     line-height: 1.5;
 }
-/* Hero das páginas internas */
+
+/* ================================
+   PÁGINAS INTERNAS — GERAL
+================================ */
 .page-hero {
     text-align: center;
     padding: 60px 24px 32px;
@@ -257,11 +247,10 @@ body {
 .page-hero h1 {
     font-size: 2rem;
     font-weight: 600;
-    color: #5f2c92;
+    color: var(--roxo-principal);
     margin-bottom: 8px;
 }
 
-/* Conteúdo das páginas */
 .page-content {
     max-width: 800px;
     margin: 0 auto;
@@ -275,39 +264,65 @@ body {
 .content-block h2 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #5f2c92;
+    color: var(--roxo-principal);
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #e0d7f0;
+    border-bottom: 1px solid var(--borda-card);
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-/* Timeline (currículo) */
+/* ================================
+   CURRÍCULO — LISTA E TABELA
+================================ */
 .timeline-item {
-    border-left: 3px solid #b39ddb;
+    border-left: 3px solid var(--roxo-borda);
     padding-left: 16px;
     margin-bottom: 20px;
 }
 
 .timeline-titulo {
     font-weight: 600;
-    color: #2d2d2d;
+    color: var(--texto-principal);
 }
 
 .timeline-local {
-    color: #666;
+    color: var(--texto-secundario);
     font-size: 14px;
 }
 
 .timeline-data {
     font-size: 12px;
-    color: #aaa;
+    color: var(--texto-muted);
     margin-bottom: 4px;
 }
 
-/* Tags de habilidades */
+.tabela-curriculo {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabela-curriculo th {
+    background: var(--roxo-fundo);
+    color: var(--roxo-principal);
+    font-weight: 600;
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid var(--borda-card);
+}
+
+.tabela-curriculo td {
+    padding: 10px 14px;
+    border: 1px solid var(--borda-card);
+    color: var(--texto-secundario);
+    background: var(--fundo-card);
+}
+
+/* ================================
+   TAGS DE HABILIDADES
+================================ */
 .tags-grid {
     display: flex;
     flex-wrap: wrap;
@@ -315,33 +330,23 @@ body {
 }
 
 .tag {
-    background: #ede7f6;
-    color: #5f2c92;
+    background: var(--roxo-fundo);
+    color: var(--roxo-principal);
     font-size: 13px;
     font-weight: 500;
     padding: 4px 12px;
     border-radius: 20px;
 }
 
-/* Lista de interesses */
-.interests-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.interests-list li::before {
-    content: "→ ";
-    color: #6040a1;
-}
-
-/* Contato */
+/* ================================
+   CONTATO — FORMULÁRIO
+================================ */
 .contact-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 32px;
 }
 
 .contact-list li {
@@ -349,19 +354,91 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 15px;
-    color: #444;
-}
-
-.contact-list a {
-    color: #6040a1;
-    text-decoration: none;
-}
-
-.contact-list a:hover {
-    text-decoration: underline;
+    color: var(--texto-secundario);
 }
 
 .contact-list .ti {
     font-size: 20px;
-    color: #6040a1;
+    color: var(--roxo-claro);
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-contato label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--texto-principal);
+    margin-bottom: 4px;
+    display: block;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--borda-card);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--texto-principal);
+    background: var(--fundo-card);
+    transition: border-color var(--transition);
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    outline: none;
+    border-color: var(--roxo-borda);
+}
+
+.form-contato textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    background: var(--roxo-principal);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background var(--transition);
+}
+
+.btn-enviar:hover {
+    background: var(--roxo-claro);
+}
+
+.form-erro {
+    color: #c0392b;
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+/* ================================
+   DARK MODE
+================================ */
+body.dark-mode {
+    --fundo-pagina: #1a1a2e;
+    --fundo-card: #22223b;
+    --borda-card: #3a3a5c;
+    --texto-principal: #e0e0e0;
+    --texto-secundario: #aaa;
+    --texto-muted: #666;
+    background-color: var(--fundo-pagina);
+    color: var(--texto-principal);
+}
+
+body.dark-mode .navbar {
+    background-color: rgba(26, 26, 46, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
 }
