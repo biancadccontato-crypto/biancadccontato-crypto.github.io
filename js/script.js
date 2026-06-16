@@ -47,3 +47,8 @@ function enviarFormulario(event) {
         mensagem.value = '';
     }
 }
+function toggleCard(header) {
+    const body = header.nextElementSibling;
+    header.classList.toggle('open');
+    body.classList.toggle('open');
+}
