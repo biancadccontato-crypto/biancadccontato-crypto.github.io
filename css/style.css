@@ -301,7 +301,7 @@ a:hover {
 .tabela-curriculo {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tabela-curriculo th {
@@ -441,4 +441,15 @@ body.dark-mode {
 body.dark-mode .navbar {
     background-color: rgba(26, 26, 46, 0.9);
     border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+/* ================================
+   RECEITA — CONTAINER
+================================ */
+.receita-container {
+    max-width: 800px;
+    margin: 40px auto 60px;
+    background: var(--fundo-card);
+    border-radius: 12px;
+    border: 1px solid var(--borda-card);
+    padding: 40px;
 }
