@@ -512,3 +512,72 @@ body.dark-mode .navbar {
   color: var(--text,  #5f2c92;
   line-height: 2.2;
 }
+/* ================================
+   BLOG — CARDS
+================================ */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+}
+
+.blog-card {
+  background: var(--fundo-card);
+  border: 1px solid var(--borda-card);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--roxo-borda);
+}
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.post-data {
+  font-size: 12px;
+  color: var(--texto-muted);
+}
+
+.blog-card-titulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--roxo-principal);
+  margin-bottom: 8px;
+}
+
+.blog-card-trecho {
+  font-size: 14px;
+  color: var(--texto-secundario);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.btn-ler-mais {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--roxo-claro);
+  text-decoration: none;
+  border: 1px solid var(--roxo-borda);
+  padding: 5px 14px;
+  border-radius: 6px;
+  transition: background var(--transition);
+}
+
+.btn-ler-mais:hover {
+  background: var(--roxo-fundo);
+  text-decoration: none;
+}
