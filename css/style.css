@@ -453,3 +453,30 @@ body.dark-mode .navbar {
     border: 1px solid var(--borda-card);
     padding: 40px;
 }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card-bg, #1a1a2e);
+  border: 1px solid var(--card-border, #2a2a4a);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--accent, #a78bfa);
+}
+
+.card ol {
+  padding-left: 1.2rem;
+  color: var(--text, #e0e0e0);
+  line-height: 2;
+}
