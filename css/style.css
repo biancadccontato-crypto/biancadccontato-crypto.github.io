@@ -78,7 +78,7 @@ a:hover {
 
 .nav-links a {
     color: var(--roxo-claro);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     transition: color var(--transition);
@@ -97,8 +97,8 @@ a:hover {
     background: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -463,8 +463,8 @@ body.dark-mode .navbar {
 }
 
 .card {
-  background: var(--card-bg, #1a1a2e);
-  border: 1px solid var(--card-border, #2a2a4a);
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--card-border,  #5f2c92);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -479,18 +479,18 @@ body.dark-mode .navbar {
 }
 
 .card-header:hover {
-  background: var(--card-hover, #22223b);
+  background: var(--card-hover, #ffffff);
 }
 
 .card-header h2 {
   font-size: 1.2rem;
-  color: var(--accent, #a78bfa);
+  color: var(--accent,  #5f2c92);
   margin: 0;
 }
 
 .card-header i {
   font-size: 1.2rem;
-  color: var(--accent, #a78bfa);
+  color: var(--accent,  #5f2c92);
   transition: transform 0.3s ease;
 }
 
@@ -509,6 +509,6 @@ body.dark-mode .navbar {
 
 .card-body ol {
   padding-left: 1.2rem;
-  color: var(--text, #e0e0e0);
+  color: var(--text,  #5f2c92;
   line-height: 2.2;
 }
