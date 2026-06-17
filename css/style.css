@@ -589,3 +589,20 @@ body.dark-mode .navbar {
   background: var(--roxo-fundo);
   text-decoration: none;
 }
+/* ================================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    padding: 20px 24px;
+    font-size: 13px;
+    color: var(--texto-muted);
+    border-top: 1px solid var(--borda-card);
+    margin-top: 40px;
+    background-color: var(--fundo-card);
+}
+
+body.dark-mode footer {
+    background-color: var(--fundo-card);
+    border-top-color: var(--borda-card);
+}
