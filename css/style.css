@@ -427,7 +427,8 @@ a:hover {
 /* ================================
    DARK MODE
 ================================ */
-body.dark-mode {
+html.dark-mode,
+html.dark-mode body {
     --fundo-pagina: #1a1a2e;
     --fundo-card: #22223b;
     --borda-card: #3a3a5c;
@@ -438,56 +439,56 @@ body.dark-mode {
     color: var(--texto-principal);
 }
 
-body.dark-mode .navbar {
+html.dark-mode .navbar {
     background-color: rgba(26, 26, 46, 0.9);
     border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6 {
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
     color: #ffffff;
 }
 
-body.dark-mode a,
-body.dark-mode .nav-links a,
-body.dark-mode .nav-home {
+html.dark-mode a,
+html.dark-mode .nav-links a,
+html.dark-mode .nav-home {
     color: #ffffff;
 }
 
-body.dark-mode .nav-links a:hover,
-body.dark-mode .nav-home:hover {
+html.dark-mode .nav-links a:hover,
+html.dark-mode .nav-home:hover {
     color: #cccccc;
 }
 
-body.dark-mode .post-card h3 a,
-body.dark-mode .blog-card-titulo,
-body.dark-mode .card-header h2 {
+html.dark-mode .post-card h3 a,
+html.dark-mode .blog-card-titulo,
+html.dark-mode .card-header h2 {
     color: #ffffff;
 }
 
-body.dark-mode .post-card h3 a:hover {
+html.dark-mode .post-card h3 a:hover {
     color: #cccccc;
 }
 
-body.dark-mode .btn-ler-mais {
+html.dark-mode .btn-ler-mais {
     color: #ffffff;
     border-color: #ffffff;
 }
 
-body.dark-mode .btn-ler-mais:hover {
+html.dark-mode .btn-ler-mais:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-body.dark-mode .nav-btn {
+html.dark-mode .nav-btn {
     color: #cccccc;
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-body.dark-mode .nav-btn:hover {
+html.dark-mode .nav-btn:hover {
     color: #ffffff;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -651,7 +652,7 @@ footer {
     background-color: var(--fundo-card);
 }
 
-body.dark-mode footer {
+html.dark-mode footer {
     background-color: var(--fundo-card);
     border-top-color: var(--borda-card);
 }
