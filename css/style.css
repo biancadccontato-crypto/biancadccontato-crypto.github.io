@@ -78,7 +78,7 @@ a:hover {
 
 .nav-links a {
     color: var(--roxo-claro);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     transition: color var(--transition);
