@@ -7,8 +7,9 @@ const temaSalvo = localStorage.getItem('theme');
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Aplicar Tema Salvo
+    // Aplica no <body>, onde o CSS define as regras de dark-mode
     if (temaSalvo === 'dark') {
-        document.documentElement.classList.add('dark-mode'); // Aplica no <html> conforme o CSS exige
+        document.body.classList.add('dark-mode');
         const btnIcon = document.querySelector('#darkBtn i');
         if (btnIcon) btnIcon.className = 'ti ti-sun';
     }
@@ -26,15 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // ================================
 document.getElementById('darkBtn').addEventListener('click', function () {
     this.classList.toggle('active');
-    
-    // Alterna a classe no <html> para respeitar a regra css "html.dark-mode"[cite: 1]
-    document.documentElement.classList.toggle('dark-mode'); 
-    
-    const isDark = document.documentElement.classList.contains('dark-mode');
+
+    // Alterna a classe no <body>, onde o CSS define body.dark-mode
+    document.body.classList.toggle('dark-mode');
+
+    const isDark = document.body.classList.contains('dark-mode');
     const icon = this.querySelector('i');
     if (icon) icon.className = isDark ? 'ti ti-sun' : 'ti ti-moon';
 
-    // Salva a preferência do usuário no navegador
+    // Salva a preferência no localStorage para persistir entre páginas
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
