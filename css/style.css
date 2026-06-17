@@ -432,12 +432,12 @@ body.dark-mode {
     --texto-secundario: #aaa;
     --texto-muted: #666;
     background-color: var(--fundo-pagina);
-    color: var(--texto-principal);
+    color: #ffffff;
 }
 
 body.dark-mode .navbar {
     background-color: rgba(26, 26, 46, 0.9);
-    border-bottom-color: rgba(255, 255, 255, 0.08);
+    border-bottom-color: #e0e0e0;
 }
 /* ================================
    RECEITA — CONTAINER
