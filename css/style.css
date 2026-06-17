@@ -466,7 +466,7 @@ body.dark-mode .nav-home:hover {
 body.dark-mode .post-card h3 a,
 body.dark-mode .blog-card-titulo,
 body.dark-mode .card-header h2 {
-    color: #ffffff;
+    color:var(--roxo-principal);
 }
 
 body.dark-mode .post-card h3 a:hover {
