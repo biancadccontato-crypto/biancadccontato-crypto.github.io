@@ -509,12 +509,10 @@ body.dark-mode .navbar {
 
 .card-body ol {
   padding-left: 1.2rem;
-  color: var(--text,  #5f2c92;
+  color: var(--text,  #5f2c92);
   line-height: 2.2;
 }
-/* ================================
-   BLOG — CARDS
-================================ */
+
 .blog-container {
   display: flex;
   flex-direction: column;
